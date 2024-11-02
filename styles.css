@@ -96,6 +96,31 @@ section {
     line-height: 1.7;
 }
 
+/* Value Proposition Section */
+#value-proposition {
+    /* Existing styles for this section */
+}
+
+#value-proposition h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+/* Styles for Clean List */
+#value-proposition ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#value-proposition ul li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #333333;
+    border-left: 4px solid #1a73e8; /* Left border for each item */
+    padding-left: 15px; /* Space between border and text */
+}
 section h2 {
     font-size: 2rem;
     color: #1a73e8;
