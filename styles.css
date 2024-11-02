@@ -12,6 +12,7 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
+    line-height: 1.6; /* Increase line spacing for readability */
 }
 
 body::before {
@@ -25,24 +26,68 @@ body::before {
     z-index: -1;
 }
 
-/* Centering for Sections */
-section {
+/* Hero Section with Adjusted Layout */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
     max-width: 800px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Image Styling */
+.book-cover {
+    width: 35%; /* Adjust size to original scale */
+    max-width: 300px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#hero h1, #social-proof h2, #value-proposition h2, #emotional-connection h2,
-#reciprocity h2, #chapters-preview h2, #faq h2, #final-cta h2 {
+/* Text Content Styling */
+.text-content {
+    width: 65%; /* Adjust width for text next to image */
+    text-align: left;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
     color: #1a73e8;
+    margin-bottom: 10px;
 }
 
-/* Buttons */
+#hero p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.7; /* Increased line height for readability */
+}
+
+/* Form and Button Styling */
+#email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#email-form input[type="text"],
+#email-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    width: 100%;
+}
+
+/* CTA Button */
 button {
     padding: 12px 24px;
     color: #ffffff;
@@ -57,6 +102,24 @@ button:hover {
     background-color: #2b8b3e;
 }
 
+/* Centered Layout for All Sections */
+section {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#social-proof h2, #value-proposition h2, #emotional-connection h2, #reciprocity h2,
+#chapters-preview h2, #faq h2, #final-cta h2 {
+    color: #1a73e8;
+}
+
+/* Popup Styling */
 .popup {
     display: none;
     position: fixed;
