@@ -36,8 +36,7 @@ body::before {
 }
 
 .content-container {
-    display: flex;
-    align-items: center;
+    display: block; /* Ensures vertical stacking */
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
@@ -249,14 +248,15 @@ cite {
     line-height: 1.7;
 }
 
-/* Ensure thank-you-message and content-container are in vertical layout */
-.content-container {
-    display: block; /* Force block layout for vertical stacking */
+/* Thank You Message Styling */
+.thank-you-message {
+    display: block; /* Ensures vertical layout for heading and paragraph */
+    margin-bottom: 30px;
 }
 
 .thank-you-message h3 {
     font-size: 1.5rem;
-    color: #1a73e8; /* Blue color for thank you title */
+    color: #1a73e8; /* Blue color for "Congratulations" title */
     margin-bottom: 10px;
     text-align: center;
 }
@@ -269,10 +269,9 @@ cite {
     text-align: center;
 }
 
-
-
 /* Special Offer Section Styling */
 .special-offer {
+    display: block; /* Ensures elements stack vertically */
     text-align: center;
     background-color: #f8f9fa;
     padding: 20px;
