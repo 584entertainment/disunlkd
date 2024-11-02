@@ -22,27 +22,27 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Flexbox for Image and Content */
+/* Flexbox for Image and Content in Hero Section Only */
 .content-container {
     display: flex;
     align-items: center;
-    max-width: 800px; /* Aligns with the width of the about section */
+    max-width: 800px;
     margin: 0 auto; /* Centers content within the hero section */
     gap: 20px;
 }
 
 /* Image Styling */
 .book-cover {
-    width: 40%; /* Adjusts the image to occupy a fixed portion on the left */
+    width: 40%; 
     max-width: 300px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Text Content Styling */
+/* Text Content Styling in Hero Section */
 .text-content {
-    width: 60%; /* Keeps text content within the boundaries of the about section */
+    width: 60%; 
     text-align: left;
 }
 
@@ -61,8 +61,8 @@ body {
 #email-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds space between "Your Name" and "Your Email" fields */
-    margin-bottom: 20px; /* Adds space between the form and the button */
+    gap: 15px; /* Space between "Your Name" and "Your Email" fields */
+    margin-bottom: 20px; /* Space between the form and the button */
 }
 
 #email-form input[type="text"],
@@ -89,8 +89,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* About the Book Section */
-#about-book {
+/* Center Alignment for Following Sections */
+section {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
@@ -99,33 +99,23 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#about-book h2 {
+/* Specific Styling for Each Section */
+#about-book h2,
+#chapters-overview h2,
+#testimonials h2,
+#purchase h2 {
     font-size: 2rem;
     color: #3333cc;
     margin-bottom: 20px;
 }
 
-#about-book p {
+#about-book p,
+#purchase p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-/* Key Chapters Overview */
-#chapters-overview {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#chapters-overview h2 {
-    font-size: 2rem;
-    color: #3333cc;
-    margin-bottom: 20px;
-}
-
+/* Key Chapters Section */
 .chapter-list {
     display: flex;
     flex-direction: column;
@@ -143,21 +133,6 @@ button:hover {
 }
 
 /* Testimonials Section */
-#testimonials {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #3333cc;
-    border-radius: 8px;
-}
-
-#testimonials h2 {
-    font-size: 2rem;
-    color: #3333cc;
-    margin-bottom: 20px;
-}
-
 blockquote {
     font-size: 1.2rem;
     font-style: italic;
@@ -173,26 +148,6 @@ cite {
 }
 
 /* Purchase Call-to-Action Section */
-#purchase {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#purchase h2 {
-    font-size: 2rem;
-    color: #3333cc;
-    margin-bottom: 10px;
-}
-
-#purchase p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
 button.purchase-button {
     padding: 12px 24px;
     font-size: 1.2rem;
