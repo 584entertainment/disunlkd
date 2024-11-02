@@ -12,7 +12,7 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    line-height: 1.7; /* Increased line height */
+    line-height: 1.7;
 }
 
 /* Overlay for Readability */
@@ -23,7 +23,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(227, 242, 253, 0.85); /* Softer overlay for text readability */
+    background: rgba(227, 242, 253, 0.85);
     z-index: -1;
 }
 
@@ -41,6 +41,7 @@ body::before {
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px; /* Increased gap for spacing */
+    padding-left: 20px; /* Moves content away from the border */
 }
 
 .book-cover {
@@ -97,17 +98,13 @@ section {
 }
 
 /* Value Proposition Section */
-#value-proposition {
-    /* Existing styles for this section */
-}
-
 #value-proposition h2 {
     font-size: 2rem;
     color: #1a73e8;
     margin-bottom: 15px;
 }
 
-/* Styles for Clean List */
+/* Clean List Styling */
 #value-proposition ul {
     list-style: none;
     padding: 0;
@@ -119,8 +116,9 @@ section {
     font-size: 1.1rem;
     color: #333333;
     border-left: 4px solid #1a73e8; /* Left border for each item */
-    padding-left: 15px; /* Space between border and text */
+    padding-left: 15px;
 }
+
 section h2 {
     font-size: 2rem;
     color: #1a73e8;
@@ -135,12 +133,6 @@ section ul {
     line-height: 1.8;
     max-width: 700px;
     margin: 0 auto;
-}
-
-section ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    text-align: left;
 }
 
 /* Blockquote for Testimonials */
@@ -194,4 +186,5 @@ cite {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 
