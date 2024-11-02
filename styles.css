@@ -7,10 +7,35 @@
 }
 
 body {
-    text-align: center;
     color: #333333; /* Dark Gray for text */
     padding: 20px;
-    background-color: #e3f2fd; /* Light Blue background */
+    background: url('background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensures image covers entire background */
+    position: relative;
+}
+
+/* Overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(227, 242, 253, 0.8); /* Light Blue overlay */
+    z-index: -1; /* Keeps the overlay below the main content */
+}
+
+/* Ensures all main sections remain on top of the overlay */
+#hero, #about-book, #chapters-overview, #testimonials, #purchase {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
@@ -19,7 +44,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    background-color: #ffffff; /* White for clean hero section */
 }
 
 /* Flexbox for Image and Content in Hero Section Only */
@@ -27,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     max-width: 800px;
-    margin: 0 auto; /* Centers content within the hero section */
+    margin: 0 auto;
     gap: 20px;
 }
 
@@ -54,7 +78,7 @@ body {
 
 #hero p {
     font-size: 1.2rem;
-    color: #333333; /* Dark Gray for paragraph text */
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -91,16 +115,6 @@ button:hover {
     background-color: #2b8b3e; /* Darker Green for hover */
 }
 
-/* Center Alignment for Sections After Hero */
-#about-book, #chapters-overview, #testimonials, #purchase {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 /* Specific Styling for Each Section */
 #about-book h2,
 #chapters-overview h2,
@@ -127,12 +141,12 @@ button:hover {
 
 .chapter h3 {
     font-size: 1.5rem;
-    color: #1a73e8; /* Deep Blue for chapter headings */
+    color: #1a73e8;
 }
 
 .chapter p {
     font-size: 1.1rem;
-    color: #555555; /* Slightly lighter gray for secondary text */
+    color: #555555;
 }
 
 /* Testimonials Section */
@@ -161,6 +175,10 @@ button.purchase-button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+button.purchase-button:hover {
+    background-color: #2b8b3e;
 }
 
 button.purchase-button:hover {
