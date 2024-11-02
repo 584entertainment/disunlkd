@@ -56,14 +56,14 @@ body::before {
     text-align: center; /* Center-aligns text horizontally */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers text vertically in the column */
+    align-items: center; /* Centers all items in the container */
     gap: 15px;
 }
 
 #hero h1 {
     font-size: 2.8rem;
     color: #1a73e8;
-    margin-bottom: 10px;
+    margin: 0; /* Removes default margin for precise centering */
 }
 
 #hero p {
@@ -71,10 +71,7 @@ body::before {
     color: #333333;
 }
 
-
-/* Call to Action Button */
 button {
-    align-self: flex-start; /* Aligns button to the start of text content */
     padding: 14px 28px;
     font-size: 1.1rem;
     color: #ffffff;
@@ -83,6 +80,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-self: center; /* Ensures the button is centered */
 }
 
 button:hover {
@@ -115,7 +113,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* Clean List Styling without Blue Line */
+/* Clean List Styling */
 #value-proposition ul {
     list-style: none;
     padding: 0;
