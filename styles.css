@@ -26,8 +26,8 @@ body {
 .content-container {
     display: flex;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto; /* Centers content within the hero section */
+    max-width: 800px; /* Sets width specifically for hero content */
+    margin: 0 auto;
     gap: 20px;
 }
 
@@ -89,10 +89,10 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Center Alignment for Following Sections */
-section {
-    max-width: 800px;
-    margin: 40px auto;
+/* Center Alignment for Sections After Hero */
+#about-book, #chapters-overview, #testimonials, #purchase {
+    max-width: 800px; /* Ensures content width consistency */
+    margin: 40px auto; /* Centers each section independently */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -159,6 +159,11 @@ button.purchase-button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+button.purchase-button:hover {
+    background-color: #218838;
+}
+
 
 button.purchase-button:hover {
     background-color: #218838;
