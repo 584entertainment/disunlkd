@@ -98,27 +98,34 @@ section {
 }
 
 /* Value Proposition Section */
+#value-proposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #value-proposition h2 {
     font-size: 2rem;
     color: #1a73e8;
     margin-bottom: 15px;
 }
 
-/* Clean List Styling */
+/* Enhanced Centering and List Styling */
 #value-proposition ul {
     list-style: none;
     padding: 0;
-    margin: 20px auto; /* Centers the list within the section */
-    max-width: 600px; /* Limits the width for balanced alignment */
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px; /* Centers the list within the section */
+    text-align: left; /* Aligns text to the left */
 }
 
 #value-proposition ul li {
-    padding: 12px 0; /* Adds spacing between items */
-    font-size: 1.2rem; /* Adjusted font size for clarity */
+    padding: 12px 0;
+    font-size: 1.2rem;
     color: #333333;
     border-left: 4px solid #1a73e8; /* Adds a border for visual emphasis */
-    padding-left: 15px; /* Spacing between border and text */
-    text-align: left; /* Aligns list items to the left */
+    padding-left: 15px;
     line-height: 1.6;
 }
 
@@ -137,6 +144,7 @@ section ul {
     line-height: 1.8;
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Blockquote for Testimonials */
