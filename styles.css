@@ -26,17 +26,6 @@ body::before {
     z-index: -1; /* Keeps the overlay below the main content */
 }
 
-/* Centering for Sections Below Hero */
-#about-book, #chapters-overview, #testimonials, #purchase {
-    max-width: 800px;
-    margin: 40px auto; /* Centers each section on the page */
-    padding: 20px;
-    background-color: #ffffff; /* White background for each section */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centers content within each section */
-}
-
 /* Hero Section */
 #hero {
     display: flex;
@@ -114,6 +103,21 @@ button:hover {
     background-color: #2b8b3e; /* Darker Green for hover */
 }
 
+/* Centering for All Main Sections Below Hero */
+#about-book, #chapters-overview, #testimonials, #purchase {
+    max-width: 800px;
+    width: 90%; /* Ensures the sections are responsive */
+    margin: 40px auto; /* Centers each section on the page */
+    padding: 20px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers content within each section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally within each section */
+}
+
 /* Specific Styling for Each Section */
 #about-book h2,
 #chapters-overview h2,
@@ -129,6 +133,7 @@ button:hover {
     font-size: 1.1rem;
     color: #333333;
     line-height: 1.6;
+    max-width: 700px; /* Ensures paragraph text does not stretch too wide */
 }
 
 /* Key Chapters Section */
@@ -136,6 +141,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center; /* Centers chapter list within the section */
 }
 
 .chapter h3 {
@@ -146,6 +152,8 @@ button:hover {
 .chapter p {
     font-size: 1.1rem;
     color: #555555;
+    max-width: 700px;
+    text-align: center;
 }
 
 /* Testimonials Section */
@@ -155,6 +163,7 @@ blockquote {
     color: #333333;
     margin: 20px 0;
     text-align: center;
+    max-width: 700px;
 }
 
 cite {
@@ -175,10 +184,6 @@ button.purchase-button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button.purchase-button:hover {
-    background-color: #2b8b3e;
 }
 
 button.purchase-button:hover {
