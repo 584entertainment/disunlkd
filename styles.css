@@ -1,3 +1,18 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
 /* Hero Section */
 #hero {
     display: flex;
@@ -11,14 +26,14 @@
 .content-container {
     display: flex;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Aligns with the width of the about section */
+    margin: 0 auto; /* Centers content within the hero section */
     gap: 20px;
 }
 
 /* Image Styling */
 .book-cover {
-    width: 40%;
+    width: 40%; /* Adjusts the image to occupy a fixed portion on the left */
     max-width: 300px;
     height: auto;
     border-radius: 8px;
@@ -27,7 +42,7 @@
 
 /* Text Content Styling */
 .text-content {
-    width: 60%;
+    width: 60%; /* Keeps text content within the boundaries of the about section */
     text-align: left;
 }
 
@@ -46,8 +61,8 @@
 #email-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 15px; /* Adds space between "Your Name" and "Your Email" fields */
+    margin-bottom: 20px; /* Adds space between the form and the button */
 }
 
 #email-form input[type="text"],
@@ -72,4 +87,124 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* About the Book Section */
+#about-book {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#about-book h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 20px;
+}
+
+#about-book p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Key Chapters Overview */
+#chapters-overview {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#chapters-overview h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 20px;
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chapter h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.chapter p {
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+/* Testimonials Section */
+#testimonials {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #3333cc;
+    border-radius: 8px;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+/* Purchase Call-to-Action Section */
+#purchase {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#purchase h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 10px;
+}
+
+#purchase p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+button.purchase-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.purchase-button:hover {
+    background-color: #218838;
 }
