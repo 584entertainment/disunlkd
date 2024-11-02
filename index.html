@@ -8,17 +8,25 @@
 </head>
 <body>
 
-    <!-- Hero Section with Image and Text Side by Side -->
+    <!-- Hero Section with Image, Form, and Button Side by Side -->
     <section id="hero">
         <div class="content-container">
             <!-- Image on the Left -->
             <img src="DUcover.png" alt="Discipline Unlocked Book Cover" class="book-cover">
 
-            <!-- Title and Text on the Right -->
+            <!-- Title, Form, and Button on the Right -->
             <div class="text-content">
                 <h1>Transform Your Life with Self-Discipline</h1>
                 <p>Download a free sneak peek of <em>Discipline Unlocked</em> and start building habits that last.</p>
-                <button onclick="openPopup()">Get Your Free Chapter</button>
+
+                <!-- Email Form -->
+                <form id="email-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </form>
+
+                <!-- Submit Button Below the Form -->
+                <button type="submit" form="email-form">Get Your Free Chapter</button>
             </div>
         </div>
     </section>
@@ -64,25 +72,5 @@
         <button onclick="location.href='purchase-page.html'">Buy the Book Now</button>
     </section>
 
-    <!-- Pop-Up Form for Free Chapter -->
-    <div id="email-popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>Get Instant Access to Your Free Chapter</h2>
-            <p>Enter your name and email below to receive a sneak peek of <em>Discipline Unlocked</em>.</p>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <button type="submit">Send Me the Free Chapter</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-
-
-    <script src="scripts.js"></script>
 </body>
 </html>
