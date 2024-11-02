@@ -238,7 +238,7 @@ cite {
 
 /* Thank You Section */
 #thank-you {
-    max-width: 900px;
+    max-width: 800px;
     width: 90%;
     margin: 50px auto;
     padding: 25px;
@@ -248,46 +248,51 @@ cite {
     line-height: 1.7;
 }
 
-/* Smaller Thank You Message Styling */
-.small-thank-you h3 {
-    font-size: 1.6rem;
-    color: #1a73e8; /* Blue color for the title */
-    margin-bottom: 10px;
+/* Thank You Message Styling */
+.thank-you-message {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.small-thank-you p {
-    font-size: 1rem;
+.thank-you-message h3 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.thank-you-message p {
+    font-size: 1.1rem;
     color: #333333;
-    text-align: center;
-    margin: 0 auto;
     max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Special Offer Section Styling */
+/* Special Offer Section */
 .special-offer {
-    margin-top: 30px;
-    padding: 20px;
     text-align: center;
-    background-color: #f8f9fa; /* Light background to make it stand out */
+    background-color: #f8f9fa;
+    padding: 20px;
     border-radius: 8px;
+    margin-top: 30px;
 }
 
 .special-offer h2 {
     font-size: 1.8rem;
     color: #34a853;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .special-offer p {
     font-size: 1.2rem;
     color: #333333;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
 }
 
 /* Special Offer Button */
 .btn-special-offer {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 12px 24px;
     font-size: 1.1rem;
     color: #ffffff;
