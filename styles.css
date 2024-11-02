@@ -249,7 +249,11 @@ cite {
     line-height: 1.7;
 }
 
-/* Thank You Message Styling */
+/* Ensure thank-you-message and content-container are in vertical layout */
+.content-container {
+    display: block; /* Force block layout for vertical stacking */
+}
+
 .thank-you-message h3 {
     font-size: 1.5rem;
     color: #1a73e8; /* Blue color for thank you title */
@@ -262,7 +266,10 @@ cite {
     color: #333333;
     max-width: 600px;
     margin: 0 auto 20px auto;
+    text-align: center;
 }
+
+
 
 /* Special Offer Section Styling */
 .special-offer {
