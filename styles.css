@@ -26,16 +26,15 @@ body::before {
     z-index: -1; /* Keeps the overlay below the main content */
 }
 
-/* Ensures all main sections remain on top of the overlay */
-#hero, #about-book, #chapters-overview, #testimonials, #purchase {
-    position: relative;
-    z-index: 1;
+/* Centering for Sections Below Hero */
+#about-book, #chapters-overview, #testimonials, #purchase {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 40px auto; /* Centers each section on the page */
     padding: 20px;
     background-color: #ffffff; /* White background for each section */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers content within each section */
 }
 
 /* Hero Section */
@@ -51,7 +50,7 @@ body::before {
     display: flex;
     align-items: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers content within the hero section */
     gap: 20px;
 }
 
@@ -155,6 +154,7 @@ blockquote {
     font-style: italic;
     color: #333333;
     margin: 20px 0;
+    text-align: center;
 }
 
 cite {
