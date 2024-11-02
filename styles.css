@@ -41,7 +41,7 @@ body::before {
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
-    padding-left: 20px; /* Moves content away from the border */
+    padding-left: 20px;
 }
 
 .book-cover {
@@ -53,17 +53,17 @@ body::before {
 
 .text-content {
     width: 65%;
-    text-align: center; /* Center-aligns text horizontally */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers all items in the container */
+    align-items: center;
     gap: 15px;
 }
 
 #hero h1 {
     font-size: 2.8rem;
     color: #1a73e8;
-    margin: 0; /* Removes default margin for precise centering */
+    margin: 0;
 }
 
 #hero p {
@@ -114,12 +114,12 @@ section {
 
 /* Clean List Styling */
 #value-proposition ul {
-    list-style: none; /* Removes default bullet styling */
+    list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 20px auto; /* Centers the list within the section */
     width: 100%;
-    max-width: 600px; /* Centers the list within the section */
-    text-align: left; /* Aligns text to the left */
+    max-width: 600px; /* Limits the width for balanced alignment */
+    text-align: center; /* Centers text within the list items */
 }
 
 #value-proposition ul li {
@@ -127,7 +127,8 @@ section {
     font-size: 1.2rem;
     font-weight: bold; /* Bolds the list items */
     color: #333333;
-    padding-left: 0; /* Removes left padding for precise alignment */
+    margin: 0 auto; /* Centers each list item within the container */
+    text-align: center;
     line-height: 1.6;
 }
 
