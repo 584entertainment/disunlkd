@@ -26,13 +26,14 @@ body {
 .content-container {
     display: flex;
     align-items: center;
-    max-width: 1000px;
-    width: 100%;
+    max-width: 800px; /* Aligns with the width of the about section */
+    margin: 0 auto; /* Centers content within the hero section */
     gap: 20px;
 }
 
 /* Image Styling */
 .book-cover {
+    width: 40%; /* Adjusts the image to occupy a fixed portion on the left */
     max-width: 300px;
     height: auto;
     border-radius: 8px;
@@ -41,7 +42,7 @@ body {
 
 /* Text Content Styling */
 .text-content {
-    max-width: 600px;
+    width: 60%; /* Keeps text content within the boundaries of the about section */
     text-align: left;
 }
 
@@ -263,6 +264,11 @@ button.purchase-button:hover {
     position: absolute;
     top: 10px;
     right: 15px;
+    font-size: 1.5rem;
+    color: #333333;
+    cursor: pointer;
+}
+
     font-size: 1.5rem;
     color: #333333;
     cursor: pointer;
