@@ -18,31 +18,30 @@
                 <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
                 <button onclick="openPopup()">Claim Your Free Chapter – Limited Time Only</button>
                 <div class="authority-logos">
-                    <p>Trusted by Over <strong>5,000 </strong> Readers Worldwide!</p>
+                    <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Social Proof Section -->
-<section id="social-proof">
-    <h2>What Readers Are Saying</h2>
-    <blockquote>"After reading just one chapter, I could already feel the difference in my motivation and habits!"</blockquote>
-    <cite>– Alex T.</cite>
-    
-    <blockquote>"A practical, no-nonsense approach to self-discipline. I highly recommend it."</blockquote>
-    <cite>– Jamie L.</cite>
-    
-    <blockquote>"This book gave me the structure I needed to take control of my daily habits."</blockquote>
-    <cite>– Casey M.</cite>
-    
-    <blockquote>"The best investment in myself I’ve made this year. A must-read for anyone serious about growth!"</blockquote>
-    <cite>– Jordan R.</cite>
-    
-    <blockquote>"I never thought I could build discipline, but this guide made it so achievable."</blockquote>
-    <cite>– Taylor S.</cite>
-</section>
-
+    <section id="social-proof">
+        <h2>What Readers Are Saying</h2>
+        <blockquote>"After reading just one chapter, I could already feel the difference in my motivation and habits!"</blockquote>
+        <cite>– Alex T.</cite>
+        
+        <blockquote>"A practical, no-nonsense approach to self-discipline. I highly recommend it."</blockquote>
+        <cite>– Jamie L.</cite>
+        
+        <blockquote>"This book gave me the structure I needed to take control of my daily habits."</blockquote>
+        <cite>– Casey M.</cite>
+        
+        <blockquote>"The best investment in myself I’ve made this year. A must-read for anyone serious about growth!"</blockquote>
+        <cite>– Jordan R.</cite>
+        
+        <blockquote>"I never thought I could build discipline, but this guide made it so achievable."</blockquote>
+        <cite>– Taylor S.</cite>
+    </section>
 
     <!-- Value Proposition Section -->
     <section id="value-proposition">
@@ -66,7 +65,8 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>Claim Your Free Chapter</h2>
-            <form id="popup-form">
+            <!-- Redirects to "thankyou.html" upon submission -->
+            <form id="popup-form" action="thankyou.html">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <button type="submit">Get My Free Chapter</button>
@@ -75,7 +75,16 @@
         </div>
     </div>
 
+    <script>
+        // JavaScript to control popup display
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
 </body>
 </html>
-
-
