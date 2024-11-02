@@ -34,7 +34,7 @@ body::before {
     padding: 50px 20px; /* Add padding around the hero section */
 }
 
-.content-container {
+.hero-content {
     display: flex;
     align-items: center;
     max-width: 1200px;
