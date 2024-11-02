@@ -245,18 +245,14 @@ cite {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
     line-height: 1.7;
 }
 
 /* Thank You Message Styling */
-.thank-you-message {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .thank-you-message h3 {
-    font-size: 2rem;
-    color: #1a73e8;
+    font-size: 1.5rem;
+    color: #1a73e8; /* Blue color for thank you title */
     margin-bottom: 15px;
 }
 
@@ -267,7 +263,7 @@ cite {
     margin: 0 auto;
 }
 
-/* Special Offer Section */
+/* Special Offer Section Styling */
 .special-offer {
     text-align: center;
     background-color: #f8f9fa;
@@ -277,22 +273,28 @@ cite {
 }
 
 .special-offer h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #34a853;
-    margin-bottom: 15px;
+    margin: 10px 0;
+}
+
+.special-offer h2:first-of-type {
+    color: #333333; /* Neutral color for "Exclusive Offer" */
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 .special-offer p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333333;
     max-width: 600px;
-    margin: 0 auto 20px auto;
+    margin: 15px auto;
 }
 
 /* Special Offer Button */
 .btn-special-offer {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 12px 24px;
     font-size: 1.1rem;
     color: #ffffff;
