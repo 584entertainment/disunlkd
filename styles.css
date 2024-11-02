@@ -54,6 +54,9 @@ body::before {
 .text-content {
     width: 65%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between elements */
 }
 
 #hero h1 {
@@ -65,11 +68,12 @@ body::before {
 #hero p {
     font-size: 1.3rem;
     color: #333333;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 /* Call to Action Button */
 button {
+    align-self: flex-start; /* Aligns button to the start of text content */
     padding: 14px 28px;
     font-size: 1.1rem;
     color: #ffffff;
@@ -110,7 +114,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* Enhanced Centering and List Styling */
+/* Clean List Styling without Blue Line */
 #value-proposition ul {
     list-style: none;
     padding: 0;
@@ -123,9 +127,9 @@ section {
 #value-proposition ul li {
     padding: 12px 0;
     font-size: 1.2rem;
+    font-weight: bold; /* Bolds the list items */
     color: #333333;
-    border-left: 4px solid #1a73e8; /* Adds a border for visual emphasis */
-    padding-left: 15px;
+    padding-left: 15px; /* Maintains left padding without border */
     line-height: 1.6;
 }
 
@@ -198,5 +202,4 @@ cite {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
 
