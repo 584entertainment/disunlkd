@@ -114,7 +114,7 @@ section {
 
 /* Clean List Styling */
 #value-proposition ul {
-    list-style: none;
+    list-style: none; /* Removes default bullet styling */
     padding: 0;
     margin: 20px 0;
     width: 100%;
@@ -127,7 +127,7 @@ section {
     font-size: 1.2rem;
     font-weight: bold; /* Bolds the list items */
     color: #333333;
-    padding-left: 15px; /* Maintains left padding without border */
+    padding-left: 0; /* Removes left padding for precise alignment */
     line-height: 1.6;
 }
 
@@ -200,3 +200,4 @@ cite {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
