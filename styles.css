@@ -12,9 +12,10 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    line-height: 1.6; /* Increase line spacing for readability */
+    line-height: 1.7; /* Increased line height */
 }
 
+/* Overlay for Readability */
 body::before {
     content: "";
     position: absolute;
@@ -22,74 +23,54 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(227, 242, 253, 0.8);
+    background: rgba(227, 242, 253, 0.85); /* Softer overlay for text readability */
     z-index: -1;
 }
 
-/* Hero Section with Adjusted Layout */
+/* Hero Section Styling */
 #hero {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    justify-content: center;
+    padding: 50px 0;
 }
 
 .content-container {
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
+    gap: 30px; /* Increased gap for spacing */
 }
 
-/* Image Styling */
 .book-cover {
-    width: 35%; /* Adjust size to original scale */
+    width: 35%;
     max-width: 300px;
-    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Text Content Styling */
 .text-content {
-    width: 65%; /* Adjust width for text next to image */
+    width: 65%;
     text-align: left;
 }
 
 #hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #1a73e8;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333333;
-    margin-bottom: 20px;
-    line-height: 1.7; /* Increased line height for readability */
+    margin-bottom: 25px;
 }
 
-/* Form and Button Styling */
-#email-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-#email-form input[type="text"],
-#email-form input[type="email"] {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    width: 100%;
-}
-
-/* CTA Button */
+/* Call to Action Button */
 button {
-    padding: 12px 24px;
+    padding: 14px 28px;
+    font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
     border: none;
@@ -102,24 +83,63 @@ button:hover {
     background-color: #2b8b3e;
 }
 
-/* Centered Layout for All Sections */
+/* Section Styling */
 section {
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 25px;
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
+    line-height: 1.7;
 }
 
-#social-proof h2, #value-proposition h2, #emotional-connection h2, #reciprocity h2,
-#chapters-preview h2, #faq h2, #final-cta h2 {
+section h2 {
+    font-size: 2rem;
     color: #1a73e8;
+    margin-bottom: 15px;
 }
 
-/* Popup Styling */
+/* Text Content Styling */
+section p,
+section ul {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+/* Blockquote for Testimonials */
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555555;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    color: #777777;
+    margin-top: 5px;
+}
+
+/* FAQ Styling */
+.faq-item {
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Popup Form Styling */
 .popup {
     display: none;
     position: fixed;
@@ -138,7 +158,7 @@ section {
     padding: 30px;
     width: 90%;
     max-width: 500px;
-    border-radius: 8px;
+    border-radius: 10px;
     position: relative;
 }
 
