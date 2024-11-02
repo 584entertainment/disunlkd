@@ -7,14 +7,13 @@
 }
 
 body {
-    color: #333333; /* Dark Gray for text */
+    color: #333333;
     padding: 20px;
-    background: url('background.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover; /* Ensures image covers entire background */
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
     position: relative;
 }
 
-/* Overlay for readability */
 body::before {
     content: "";
     position: absolute;
@@ -22,77 +21,32 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(227, 242, 253, 0.8); /* Light Blue overlay */
-    z-index: -1; /* Keeps the overlay below the main content */
+    background: rgba(227, 242, 253, 0.8);
+    z-index: -1;
 }
 
-/* Hero Section */
-#hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-}
-
-/* Flexbox for Image and Content in Hero Section Only */
-.content-container {
-    display: flex;
-    align-items: center;
+/* Centering for Sections */
+section {
     max-width: 800px;
-    margin: 0 auto; /* Centers content within the hero section */
-    gap: 20px;
-}
-
-/* Image Styling */
-.book-cover {
-    width: 40%; 
-    max-width: 300px;
-    height: auto;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Text Content Styling in Hero Section */
-.text-content {
-    width: 60%; 
-    text-align: left;
+#hero h1, #social-proof h2, #value-proposition h2, #emotional-connection h2,
+#reciprocity h2, #chapters-preview h2, #faq h2, #final-cta h2 {
+    color: #1a73e8;
 }
 
-#hero h1 {
-    font-size: 2.5rem;
-    color: #1a73e8; /* Deep Blue for main title */
-    margin-bottom: 10px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 20px;
-}
-
-/* Form and Button Styling */
-#email-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-#email-form input[type="text"],
-#email-form input[type="email"] {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    width: 100%;
-}
-
-/* Primary CTA Button */
+/* Buttons */
 button {
     padding: 12px 24px;
-    font-size: 1rem;
     color: #ffffff;
-    background-color: #34a853; /* Vibrant Green for primary CTA */
+    background-color: #34a853;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -100,93 +54,36 @@ button {
 }
 
 button:hover {
-    background-color: #2b8b3e; /* Darker Green for hover */
-}
-
-/* Centering for All Main Sections Below Hero */
-#about-book, #chapters-overview, #testimonials, #purchase {
-    max-width: 800px;
-    width: 90%; /* Ensures the sections are responsive */
-    margin: 40px auto; /* Centers each section on the page */
-    padding: 20px;
-    background-color: #ffffff; /* White background for each section */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centers content within each section */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally within each section */
-}
-
-/* Specific Styling for Each Section */
-#about-book h2,
-#chapters-overview h2,
-#testimonials h2,
-#purchase h2 {
-    font-size: 2rem;
-    color: #1a73e8; /* Deep Blue for section headings */
-    margin-bottom: 20px;
-}
-
-#about-book p,
-#purchase p {
-    font-size: 1.1rem;
-    color: #333333;
-    line-height: 1.6;
-    max-width: 700px; /* Ensures paragraph text does not stretch too wide */
-}
-
-/* Key Chapters Section */
-.chapter-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center; /* Centers chapter list within the section */
-}
-
-.chapter h3 {
-    font-size: 1.5rem;
-    color: #1a73e8;
-}
-
-.chapter p {
-    font-size: 1.1rem;
-    color: #555555;
-    max-width: 700px;
-    text-align: center;
-}
-
-/* Testimonials Section */
-blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #333333;
-    margin: 20px 0;
-    text-align: center;
-    max-width: 700px;
-}
-
-cite {
-    display: block;
-    font-size: 1rem;
-    color: #777777;
-    margin-bottom: 10px;
-}
-
-/* Purchase Call-to-Action Section */
-button.purchase-button {
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #34a853; /* Vibrant Green for purchase button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button.purchase-button:hover {
     background-color: #2b8b3e;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
