@@ -52,7 +52,7 @@ body::before {
 
 .text-content {
     width: 65%;
-    text-align: center; /* Align text to the left */
+    text-align: left; /* Align text to the center */
     display: flex;
     flex-direction: column;
     gap: 15px;
