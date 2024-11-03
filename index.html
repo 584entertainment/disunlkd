@@ -9,19 +9,29 @@
 <body>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="content-container">
-            <img src="DUcover.png" alt="Discipline Unlocked Book Cover" class="book-cover">
-            <div class="text-content">
-                <h1>Transform Your Life Through Self-Discipline</h1>
-                <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
-                <button onclick="openPopup()">Claim Your Free Chapter – Limited Time Only</button>
-                <div class="authority-logos">
-                    <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
-                </div>
+<section id="hero">
+    <div class="content-container">
+        <img src="DUcover.png" alt="Discipline Unlocked Book Cover" class="book-cover">
+        <div class="text-content">
+            <h1>Transform Your Life Through Self-Discipline</h1>
+            <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
+            
+            <!-- Embedded Input Form -->
+            <form id="embedded-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </form>
+            
+            <!-- CTA Button -->
+            <button>Claim Your Free Chapter – Limited Time Only</button>
+            
+            <div class="authority-logos">
+                <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Social Proof Section -->
     <section id="social-proof">
