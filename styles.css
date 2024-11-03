@@ -52,16 +52,15 @@ body::before {
 
 .text-content {
     width: 65%;
-    text-align: right; /* Align text to the right */
+    text-align: center; /* Align text to the left */
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
     gap: 15px;
 }
 
-/* First CTA Button Styling */
-#hero button {
-    padding: 12px 20px;
+/* Revert CTA Button Styling */
+button {
+    padding: 14px 24px;
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
@@ -69,9 +68,12 @@ body::before {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    max-width: 200px; /* Set a maximum width */
-    width: 100%; /* Ensures button takes up full width within max-width */
-    text-align: center;
+}
+
+button:hover {
+    background-color: #2b8b3e;
+}
+
 }
 
 button:hover {
