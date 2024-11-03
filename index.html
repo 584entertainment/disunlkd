@@ -17,15 +17,15 @@
                 <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
                 
                 <!-- Embedded Input Form -->
-                <form id="embedded-form">
+                <form id="embedded-form" oninput="validateForm()">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
+                    
+                    <!-- CTA Button with Anchor Link -->
+                    <a href="thankyou.html">
+                        <button id="cta-button" disabled>Claim Your Free Chapter – Limited Time Only</button>
+                    </a>
                 </form>
-                
-                <!-- CTA Button with Anchor Link -->
-                <a href="thankyou.html">
-                    <button>Claim Your Free Chapter – Limited Time Only</button>
-                </a>
                 
                 <div class="authority-logos">
                     <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
@@ -92,7 +92,21 @@
         </div>
     </div>
 
+    <!-- JavaScript for Validation -->
     <script>
+        function validateForm() {
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const ctaButton = document.getElementById("cta-button");
+            
+            // Enable button only if both fields are filled
+            if (name && email) {
+                ctaButton.disabled = false;
+            } else {
+                ctaButton.disabled = true;
+            }
+        }
+
         function openPopup() {
             document.getElementById("popup").style.display = "flex";
         }
@@ -104,6 +118,7 @@
 
 </body>
 </html>
+
 
 
 </body>
