@@ -60,7 +60,7 @@ body::before {
 
 /* Revert CTA Button Styling */
 button {
-    padding: 14px 24px;
+    padding: 14px 20px;
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
