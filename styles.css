@@ -36,11 +36,12 @@ body::before {
 }
 
 .content-container {
-    display: flex; /* Display content in a horizontal row */
-    align-items: center; /* Vertically align items */
+    display: flex;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px; /* Space between image and text */
+    gap: 30px;
+    padding-left: 20px;
 }
 
 .book-cover {
@@ -48,47 +49,22 @@ body::before {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 30px; /* Move image to the right */
 }
 
 .text-content {
     width: 65%;
-    text-align: left; /* Align text to the center */
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Revert CTA Button Styling */
-button {
-    padding: 14px 20px;
-    font-size: 1.1rem;
-    color: #ffffff;
-    background-color: #34a853;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2b8b3e;
-}
-
-}
-
-button:hover {
-    background-color: #2b8b3e;
-}
-
-}
-
-
+/* Heading and Paragraph in Hero */
 #hero h1 {
-    font-size: 4.2rem;
+    font-size: 2.8rem;
     color: #1a73e8;
-    margin-left: 25px; /* Adjust this value as needed for alignment */
-}
-
+    margin: 0;
 }
 
 #hero p {
@@ -96,8 +72,9 @@ button:hover {
     color: #333333;
 }
 
+/* CTA Button Styling */
 button {
-    padding: 14px 28px;
+    padding: 12px 20px; /* Adjust padding for a shorter button */
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
@@ -105,6 +82,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    max-width: 200px; /* Set max-width to shorten button */
+    width: 100%;
+    text-align: center;
 }
 
 button:hover {
@@ -196,6 +176,24 @@ cite {
     margin: 15px 0;
 }
 
+/* Embedded Form Styling */
+#embedded-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#embedded-form input[type="text"],
+#embedded-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
 /* Popup Form Styling */
 .popup {
     display: none;
@@ -276,13 +274,13 @@ cite {
 
 /* Thank You Message Styling */
 .thank-you-message {
-    display: block; /* Ensures vertical layout for heading and paragraph */
+    display: block;
     margin-bottom: 30px;
 }
 
 .thank-you-message h3 {
     font-size: 1.5rem;
-    color: #1a73e8; /* Blue color for "Congratulations" title */
+    color: #1a73e8;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -297,7 +295,7 @@ cite {
 
 /* Special Offer Section Styling */
 .special-offer {
-    display: block; /* Ensures elements stack vertically */
+    display: block;
     text-align: center;
     background-color: #f8f9fa;
     padding: 20px;
@@ -307,7 +305,7 @@ cite {
 
 .special-offer .offer-title {
     font-size: 1.5rem;
-    color: #333333; /* Neutral color for "Exclusive Offer" */
+    color: #333333;
     margin-bottom: 10px;
 }
 
