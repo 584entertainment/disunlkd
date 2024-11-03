@@ -57,6 +57,7 @@ body::before {
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center items in the text-content container */
     gap: 15px;
 }
 
@@ -92,7 +93,7 @@ body::before {
 
 /* CTA Button Styling */
 button {
-    padding: 12px 20px; /* Adjust padding for a shorter button */
+    padding: 12px 20px;
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
@@ -100,9 +101,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    max-width: 200px; /* Set max-width to shorten button */
-    width: 100%;
     text-align: center;
+    width: auto; /* Allow button to fit content naturally */
 }
 
 button:hover {
