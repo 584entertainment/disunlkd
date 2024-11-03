@@ -30,43 +30,48 @@ body::before {
 /* Hero Section Styling */
 #hero {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 50px 0;
 }
 
 .content-container {
-    display: flex;
-    align-items: center;
+    display: block; /* Ensures vertical stacking */
     max-width: 1200px;
-    gap: 30px; /* Space between image and text */
+    margin: 0 auto;
+    gap: 30px;
+    padding-left: 20px;
 }
 
 .book-cover {
-    width: 40%; /* Adjust width as needed */
+    width: 35%;
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text-content {
-    width: 60%; /* Adjust width to complement image */
-    text-align: left;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 #hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #1a73e8;
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333333;
-    margin-bottom: 20px;
 }
 
 button {
-    padding: 12px 24px;
+    padding: 14px 28px;
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #34a853;
@@ -126,6 +131,7 @@ section {
     line-height: 1.6;
 }
 
+/* Section Headers */
 section h2 {
     font-size: 2rem;
     color: #1a73e8;
@@ -141,6 +147,27 @@ section ul {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Blockquote for Testimonials */
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555555;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    color: #777777;
+    margin-top: 5px;
+}
+
+/* FAQ Styling */
+.faq-item {
+    text-align: left;
+    margin: 15px 0;
 }
 
 /* Popup Form Styling */
@@ -206,6 +233,86 @@ section ul {
     right: 15px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Thank You Section */
+#thank-you {
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Thank You Message Styling */
+.thank-you-message {
+    display: block; /* Ensures vertical layout for heading and paragraph */
+    margin-bottom: 30px;
+}
+
+.thank-you-message h3 {
+    font-size: 1.5rem;
+    color: #1a73e8; /* Blue color for "Congratulations" title */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.thank-you-message p {
+    font-size: 1.1rem;
+    color: #333333;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+/* Special Offer Section Styling */
+.special-offer {
+    display: block; /* Ensures elements stack vertically */
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.special-offer .offer-title {
+    font-size: 1.5rem;
+    color: #333333; /* Neutral color for "Exclusive Offer" */
+    margin-bottom: 10px;
+}
+
+.special-offer h2 {
+    font-size: 1.6rem;
+    color: #34a853;
+    margin: 0 0 10px 0;
+}
+
+.special-offer p {
+    font-size: 1.1rem;
+    color: #333333;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Special Offer Button */
+.btn-special-offer {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #34a853;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-special-offer:hover {
+    background-color: #2b8b3e;
 }
 
 
