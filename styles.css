@@ -72,6 +72,24 @@ body::before {
     color: #333333;
 }
 
+/* Embedded Form Styling */
+#embedded-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Matches the width of the text content */
+    max-width: 400px; /* Optional max width for the form */
+}
+
+#embedded-form input[type="text"],
+#embedded-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
 /* CTA Button Styling */
 button {
     padding: 12px 20px; /* Adjust padding for a shorter button */
