@@ -9,29 +9,30 @@
 <body>
 
     <!-- Hero Section -->
-<section id="hero">
-    <div class="content-container">
-        <img src="DUcover.png" alt="Discipline Unlocked Book Cover" class="book-cover">
-        <div class="text-content">
-            <h1>Transform Your Life Through Self-Discipline</h1>
-            <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
-            
-            <!-- Embedded Input Form -->
-            <form id="embedded-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-            </form>
-            
-            <!-- CTA Button -->
-            <button>Claim Your Free Chapter – Limited Time Only</button>
-            
-            <div class="authority-logos">
-                <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
+    <section id="hero">
+        <div class="content-container">
+            <img src="DUcover.png" alt="Discipline Unlocked Book Cover" class="book-cover">
+            <div class="text-content">
+                <h1>Transform Your Life Through Self-Discipline</h1>
+                <p>Get your free sneak peek of <em>Discipline Unlocked</em> – trusted by successful leaders worldwide.</p>
+                
+                <!-- Embedded Input Form -->
+                <form id="embedded-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </form>
+                
+                <!-- CTA Button with Anchor Link -->
+                <a href="thankyou.html">
+                    <button>Claim Your Free Chapter – Limited Time Only</button>
+                </a>
+                
+                <div class="authority-logos">
+                    <p>Trusted by Over <strong>5,000</strong> Readers Worldwide!</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Social Proof Section -->
     <section id="social-proof">
@@ -73,7 +74,9 @@
     <section id="emotional-connection">
         <h2>Your Journey to Lasting Change Starts Here</h2>
         <p>Imagine the life you could have with unbreakable discipline. Think of the goals you’ve set but haven’t achieved. <em>Discipline Unlocked</em> will give you the tools to make them a reality.</p>
-        <button onclick="openPopup()">Get Your Free Chapter and Start Your Journey</button>
+        <a href="thankyou.html">
+            <button>Get Your Free Chapter and Start Your Journey</button>
+        </a>
     </section>
 
     <!-- Popup Form -->
@@ -98,6 +101,10 @@
             document.getElementById("popup").style.display = "none";
         }
     </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
