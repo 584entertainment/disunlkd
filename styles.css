@@ -36,11 +36,11 @@ body::before {
 }
 
 .content-container {
-    display: block; /* Ensures vertical stacking */
+    display: flex; /* Display content in a horizontal row */
+    align-items: center; /* Vertically align items */
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
-    padding-left: 20px;
+    gap: 30px; /* Space between image and text */
 }
 
 .book-cover {
@@ -52,12 +52,12 @@ body::before {
 
 .text-content {
     width: 65%;
-    text-align: center;
+    text-align: left; /* Align text to the left */
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
+
 
 #hero h1 {
     font-size: 2.8rem;
